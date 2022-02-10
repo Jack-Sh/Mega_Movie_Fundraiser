@@ -1,5 +1,6 @@
 # Functions go here
 
+
 def not_blank(question):
     valid = False
 
