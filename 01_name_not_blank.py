@@ -13,4 +13,6 @@ def not_blank(question):
             print("Sorry - this can't be blank")
 
 # Main routine
+
+# Ask user for name
 name = not_blank("Name: ")
