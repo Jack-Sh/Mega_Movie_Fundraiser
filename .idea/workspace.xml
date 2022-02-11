@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_ticket_loop_v1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02_ticket_loop_v1.py">
+      <file leaf-file-name="02_ticket_loop_v2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02_ticket_loop_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="425">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -59,6 +59,7 @@
         <option value="$PROJECT_DIR$/01_name_not_blank_v2.py" />
         <option value="$PROJECT_DIR$/00_MMF_base_v1.py" />
         <option value="$PROJECT_DIR$/02_ticket_loop_v1.py" />
+        <option value="$PROJECT_DIR$/02_ticket_loop_v2.py" />
       </list>
     </option>
   </component>
@@ -127,7 +128,7 @@
       <recent name="C:\Users\shannonj9063\OneDrive - Massey High School\2022_Schoolwork\COM201\MMF\Mega_Movie_Fundraiser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.02_ticket_loop_v1">
+  <component name="RunManager" selected="Python.02_ticket_loop_v2">
     <configuration default="false" name="01_name_not_blank" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -175,6 +176,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_ticket_loop_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="02_ticket_loop_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Mega_Movie_Fundraiser" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_ticket_loop_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -313,16 +331,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.01_name_not_blank" />
       <item index="1" class="java.lang.String" itemvalue="Python.01_name_not_blank_v2" />
       <item index="2" class="java.lang.String" itemvalue="Python.02_ticket_loop_v1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.02_ticket_loop_v2" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.02_ticket_loop_v1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.01_name_not_blank_v2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.01_name_not_blank" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.02_ticket_loop_v2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.02_ticket_loop_v1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.01_name_not_blank_v2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.01_name_not_blank" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +368,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2780127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44186047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -394,6 +414,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02_ticket_loop_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/00_MMF_base_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -402,10 +430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02_ticket_loop_v1.py">
+    <entry file="file://$PROJECT_DIR$/02_ticket_loop_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="425">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding />
         </state>
       </provider>
