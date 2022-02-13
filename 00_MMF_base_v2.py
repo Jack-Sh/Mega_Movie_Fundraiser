@@ -88,10 +88,12 @@ while name != "xxx" and count < MAX_TICKETS:
 
 # If all tickets are sold print statement
 if count == MAX_TICKETS:
+    print()
     print("You have sold all the available tickets!")
 
 # If not all tickets are sold, print how many were sold and how many were left
 else:
+    print()
     print("You have sold {} tickets. \n"
           "There are {} places still available".format(count, MAX_TICKETS - count))
 
