@@ -32,8 +32,11 @@ def int_check(question):
         try:
             response = int(input(question))
 
+            # if the response is zero or lower print an error
             if response <= 0:
                 print(error)
+
+            # if the response is greater than zero, the code continues
             else:
                 return response
 
