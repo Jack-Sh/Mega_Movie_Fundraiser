@@ -52,21 +52,24 @@ def int_check(question):
 # Ask user if they have used the program before & show instructions if answer is no
 
 # Loop to get ticket details
-name = ""
-count = 0
 MAX_TICKETS = 5
 
-while name != "xxx" and count < MAX_TICKETS:
+name = ""
+ticket_count = 0
+ticket_sales = 0
+
+
+while name != "xxx" and ticket_count < MAX_TICKETS:
 
     # print number of tickets left
-    if count < 4:
-        print("You have {} seats left".format(MAX_TICKETS - count))
+    if ticket_count < MAX_TICKETS - 1:
+        print("You have {} seats left".format(MAX_TICKETS - ticket_count))
 
     # Warns user that only one seat is left
     else:
         print("*** There is only ONE seat left! ***")
 
-    # Get name (can't be blank), if the name is not 'xxx' add one to the counter
+    # Get name (can't be blank), if the name is not 'xxx' add one to the ticket_counter
     name = not_blank("Name: ")
 
     if name == "xxx":
@@ -85,22 +88,16 @@ while name != "xxx" and count < MAX_TICKETS:
         print("That is very old - it looks like a mistake")
         continue
 
-    count += 1
-
-# End of ticket loop
-
-# If all tickets are sold print statement
-if count == MAX_TICKETS:
-    print()
-    print("You have sold all the available tickets!")
-
-# If not all tickets are sold, print how many were sold and how many were left
-else:
-    print()
-    print("You have sold {} tickets. \n"
-          "There are {} places still available".format(count, MAX_TICKETS - count))
-
     # Calculate ticket price
+    if age < 16:
+        ticket_price = 7.5
+    elif age < 65:
+        ticket_price = 10.5
+    else:
+        ticket_price = 6.5
+
+    ticket_count += 1
+    ticket_sales += ticket_price
 
     # Loop to ask for snacks
 
@@ -108,6 +105,22 @@ else:
 
     # Ask for payment method (apply surcharge if needed)
 
-# Calculate total sales and profit
+# End of ticket loop
+
+# Calculate ticket profit
+print()
+ticket_profit = ticket_sales - (5 * ticket_count)
+print("Ticket profit: ${:.2f}".format(ticket_profit))
+
+# If all tickets are sold print statement
+if ticket_count == MAX_TICKETS:
+    print()
+    print("You have sold all the available tickets!")
+
+# If not all tickets are sold, print how many were sold and how many were left
+else:
+    print()
+    print("You have sold {} tickets. \n"
+          "There are {} places still available".format(ticket_count, MAX_TICKETS - ticket_count))
 
 # Output data to text file
