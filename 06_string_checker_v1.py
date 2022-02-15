@@ -1,4 +1,6 @@
-#string checker function, takes in question and list of valid responses
+# string checker function, takes in question and list of valid responses
+
+
 def string_checker(question, to_check):
 
     valid = False
