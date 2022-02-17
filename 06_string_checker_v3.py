@@ -31,17 +31,47 @@ valid_snacks = ["popcorn", "p", "corn", "a"], ["M&M's", "m&m's", "mms", "m", "b"
 
 yes_no = ["yes", "y"], ["no","n"]
 
+# holds snack order for as single user
+snack_order = []
+
+# loops until user enters yes or no
 check_snack = "Invalid choice"
 while check_snack == "Invalid choice":
+
+    # asks user if they want snacks
     want_snack = input("Do you want to order snacks? ").lower()
+    # checks whether answer is within the list
     check_snack = string_check(want_snack, yes_no)
 
-# loop for testing purposes
-for item in range (0, 6):
+# if they say yes, ask what snacks they want and add it to our list
+if check_snack == "Yes":
 
-    # ask for desired snack and put in lowercase
-    desired_snack = input("Snack: ").lower()
+    desired_snack = ""
+    if __name__ == '__main__':
+        while desired_snack != "xxx":
 
-    # check if snack is valid
-    snack_choice = string_check(desired_snack, valid_snacks)
-    print("Snack Choice:", snack_choice)
+            # ask for desired snack and put in lowercase
+            desired_snack = input("Snack: ").lower()
+
+            if desired_snack == "xxx":
+                break
+
+            # check if snack is valid
+            snack_choice = string_check(desired_snack, valid_snacks)
+            print("Snack Choice:", snack_choice)
+
+            # add snack to list..
+
+            # check that snack is not the exit code before adding
+            if snack_choice != "xxx" and snack_choice != "Invalid choice":
+                snack_order.append(snack_choice)
+
+# show snack orders
+print()
+if len(snack_order) == 0:
+    print("Snacks Ordered: None")
+
+else:
+    print("Snacks Ordered: ")
+    for item in snack_order:
+        print(item)
