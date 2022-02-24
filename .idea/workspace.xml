@@ -43,9 +43,11 @@
       <file leaf-file-name="06_string_checker_v6.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/06_string_checker_v6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <marker date="1645665450869" expanded="false" signature="100:641" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +95,7 @@
         <option value="$PROJECT_DIR$/06_string_checker_v4.py" />
         <option value="$PROJECT_DIR$/sandbox.py" />
         <option value="$PROJECT_DIR$/06_string_checker_v5.py" />
+        <option value="$PROJECT_DIR$/06_string_checker_v6.py" />
       </list>
     </option>
   </component>
@@ -162,7 +165,7 @@
       <recent name="C:\Users\shannonj9063\OneDrive - Massey High School\2022_Schoolwork\COM201\MMF\Mega_Movie_Fundraiser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.06_string_checker_v5">
+  <component name="RunManager" selected="Python.06_string_checker_v6">
     <configuration default="false" name="06_string_checker_v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,23 +179,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_string_checker_v3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="07_string_analyser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Mega_Movie_Fundraiser" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07_string_analyser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -244,6 +230,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_string_checker_v5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="06_string_checker_v6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Mega_Movie_Fundraiser" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06_string_checker_v6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -384,18 +387,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.06_string_checker_v3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.07_string_analyser" />
-      <item index="2" class="java.lang.String" itemvalue="Python.06_string_checker_v4" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sandbox" />
-      <item index="4" class="java.lang.String" itemvalue="Python.06_string_checker_v5" />
+      <item index="1" class="java.lang.String" itemvalue="Python.06_string_checker_v4" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sandbox" />
+      <item index="3" class="java.lang.String" itemvalue="Python.06_string_checker_v5" />
+      <item index="4" class="java.lang.String" itemvalue="Python.06_string_checker_v6" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.06_string_checker_v5" />
-        <item index="1" class="java.lang.String" itemvalue="Python.06_string_checker_v4" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sandbox" />
-        <item index="3" class="java.lang.String" itemvalue="Python.06_string_checker_v3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.07_string_analyser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.06_string_checker_v6" />
+        <item index="1" class="java.lang.String" itemvalue="Python.06_string_checker_v5" />
+        <item index="2" class="java.lang.String" itemvalue="Python.06_string_checker_v4" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sandbox" />
+        <item index="4" class="java.lang.String" itemvalue="Python.06_string_checker_v3" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +420,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="952" y="-8" width="976" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -804,9 +807,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06_string_checker_v6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="391">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <marker date="1645665450869" expanded="false" signature="100:641" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
