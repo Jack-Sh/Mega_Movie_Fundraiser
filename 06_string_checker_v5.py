@@ -56,6 +56,8 @@ if check_snack == "Yes":
     desired_snack = ""
     while desired_snack != "xxx":
 
+        snack_row = []
+
         # ask for desired snack and put in lowercase
         desired_snack = input("Snack: ").lower()
 
@@ -86,11 +88,12 @@ if check_snack == "Yes":
             snack_choice = "Invalid choice"
 
         # add snack and amount to list
-        amount_snack = "{} {}".format(amount, snack_choice)
+        snack_row.append(amount)
+        snack_row.append(snack_choice)
 
         # check that snack is not the exit code before adding
         if snack_choice != "xxx" and snack_choice != "Invalid choice":
-            snack_order.append(amount_snack)
+            snack_order.append(snack_row)
 
 # show snack orders
 print()
@@ -99,5 +102,4 @@ if len(snack_order) == 0:
 
 else:
     print("Snacks Ordered: ")
-    for item in snack_order:
-        print(item)
+    print(snack_order)
