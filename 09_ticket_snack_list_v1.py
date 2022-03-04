@@ -15,7 +15,7 @@ snack_lists = [popcorn, mms, pita_chips, water, orange_juice]
 
 movie_data_dict = {
     'Name': all_names,
-    ".Ticket.": all_tickets,
+    "Ticket": all_tickets,
     "Popcorn": popcorn,
     "Water": water,
     "Pita Chips": pita_chips,
@@ -70,13 +70,18 @@ print("Orange Juice: ", snack_lists[4])
 print()
 
 # Create dataframe and set index to name column
-movie_frame = pandas.DataFrame(movie_data_dict)
-movie_frame = movie_frame.set_index("Name")
+movie_frame = pandas.DataFrame(movie_data_dict, columns=["Name",
+                                                         "Ticket",
+                                                         "Popcorn",
+                                                         "Water",
+                                                         "Pita Chips",
+                                                         "M&Ms",
+                                                         "Orange Juice"])
 
 # create column called 'Sub Total'
 # fill it price for snacks and ticket
 movie_frame["Sub Total"] = \
-    movie_frame[".Ticket."] + \
+    movie_frame["Ticket"] + \
     movie_frame["Popcorn"]*price_dict["Popcorn"] + \
     movie_frame["Water"]*price_dict["Water"] + \
     movie_frame["Pita Chips"]*price_dict["Pita Chips"] + \
