@@ -207,6 +207,9 @@ orange_juice = []
 
 snack_lists = [popcorn, mms, pita_chips, water, orange_juice]
 
+# store surcharge multiplier
+surcharge_mult_list = []
+
 # Data frame dictionary
 movie_data_dict = {
     'Name': all_names,
@@ -215,7 +218,8 @@ movie_data_dict = {
     "Water": water,
     "Pita Chips": pita_chips,
     "M&Ms": mms,
-    "Orange Juice": orange_juice
+    "Orange Juice": orange_juice,
+    "Surcharge_Multiplier": surcharge_mult_list
 }
 
 # cost of each snack
@@ -296,9 +300,11 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
     else:
         surcharge_multiplier = 0
 
-# End of ticket loop
+    surcharge_mult_list.append(surcharge_multiplier)
 
-# Create dataframe and set index to name column
+# End of loop
+
+# Order columns
 movie_frame = pandas.DataFrame(movie_data_dict, columns=["Name",
                                                          "Ticket",
                                                          "Popcorn",
@@ -306,7 +312,6 @@ movie_frame = pandas.DataFrame(movie_data_dict, columns=["Name",
                                                          "Pita Chips",
                                                          "M&Ms",
                                                          "Orange Juice"])
-
 # create column called 'Sub Total'
 # fill it price for snacks and ticket
 movie_frame["Sub Total"] = \
@@ -317,12 +322,38 @@ movie_frame["Sub Total"] = \
     movie_frame["M&Ms"]*price_dict["M&Ms"] + \
     movie_frame["Orange Juice"]*price_dict["Orange Juice"]
 
+# create surcharge column
+movie_frame["Surcharge"] = \
+    movie_frame["Sub Total"] * movie_frame["Surcharge_Multiplier"]
+
+# create total column
+movie_frame["Total"] = movie_frame["Sub Total"] + \
+    movie_frame['Surcharge']
+
 # shorten column names
 movie_frame = movie_frame.rename(columns ={'Orange Juice': 'OJ',
-                                            'Pita Chips': 'Chips'})
+                                           'Pita Chips': 'Chips',
+                                           'Surcharge_Multiplier': 'SM'})
 
-print()
-print(movie_frame)
+# Set up columns to be printed
+pandas.set_option('display.max_columns', None)
+
+# Display numbers to 2 dp
+pandas.set_option('precision', 2)
+
+# ask user if they want to see all columns
+print_all = input("Print all columns? (y) for yes ")
+
+# if yes print all columns
+if print_all == "y":
+    print(movie_frame)
+
+# if no only print 'ticket', 'subtotal'
+# 'surcharge' and 'Total'
+else:
+    print(movie_frame[['Ticket', 'Sub Total',
+                       'Surcharge', 'Total']])
+
 
 # Calculate ticket profit
 print()
