@@ -1,19 +1,13 @@
-import random
+# ask user if they want to see all columns
+print_all = input("Print all columns? (y) for yes ")
 
+# if yes print all columns
+if print_all == "y":
+    print(movie_frame)
 
-def random_number():
-    n = random.randint(1,100)
-    print(n)
+# if no only print 'ticket', 'subtotal'
+# 'surcharge' and 'Total'
+else:
+    print(movie_frame[['Ticket', 'Sub Total',
+                       'Surcharge', 'Total']])
 
-rn = ""
-while rn != "xxx":
-
-    rn = input("Random Number? ")
-    print(rn)
-    if rn == "":
-        random_number()
-    else:
-        continue
-
-    if rn == "xxx":
-        break

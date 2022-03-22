@@ -331,9 +331,8 @@ movie_frame["Total"] = movie_frame["Sub Total"] + \
     movie_frame['Surcharge']
 
 # shorten column names
-movie_frame = movie_frame.rename(columns ={'Orange Juice': 'OJ',
-                                           'Pita Chips': 'Chips',
-                                           'Surcharge_Multiplier': 'SM'})
+movie_frame = movie_frame.rename(columns={'Orange Juice': 'OJ',
+                                          'Pita Chips': 'Chips'})
 
 # Set up columns to be printed
 pandas.set_option('display.max_columns', None)
@@ -341,19 +340,7 @@ pandas.set_option('display.max_columns', None)
 # Display numbers to 2 dp
 pandas.set_option('precision', 2)
 
-# ask user if they want to see all columns
-print_all = input("Print all columns? (y) for yes ")
-
-# if yes print all columns
-if print_all == "y":
-    print(movie_frame)
-
-# if no only print 'ticket', 'subtotal'
-# 'surcharge' and 'Total'
-else:
-    print(movie_frame[['Ticket', 'Sub Total',
-                       'Surcharge', 'Total']])
-
+print(movie_frame)
 
 # Calculate ticket profit
 print()
