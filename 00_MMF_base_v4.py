@@ -205,10 +205,9 @@ pita_chips = []
 water = []
 orange_juice = []
 
-snack_lists = [popcorn, mms, pita_chips, water, orange_juice]
-
-# store surcharge multiplier
 surcharge_mult_list = []
+
+snack_lists = [popcorn, mms, pita_chips, water, orange_juice]
 
 # Data frame dictionary
 movie_data_dict = {
@@ -311,7 +310,9 @@ movie_frame = pandas.DataFrame(movie_data_dict, columns=["Name",
                                                          "Water",
                                                          "Pita Chips",
                                                          "M&Ms",
-                                                         "Orange Juice"])
+                                                         "Orange Juice",
+                                                         "Surcharge_Multiplier"])
+
 # create column called 'Sub Total'
 # fill it price for snacks and ticket
 movie_frame["Sub Total"] = \
@@ -323,8 +324,7 @@ movie_frame["Sub Total"] = \
     movie_frame["Orange Juice"]*price_dict["Orange Juice"]
 
 # create surcharge column
-movie_frame["Surcharge"] = \
-    movie_frame["Sub Total"] * movie_frame["Surcharge_Multiplier"]
+movie_frame["Surcharge"] = movie_frame["Sub Total"] * movie_frame["Surcharge_Multiplier"]
 
 # create total column
 movie_frame["Total"] = movie_frame["Sub Total"] + \
@@ -332,7 +332,8 @@ movie_frame["Total"] = movie_frame["Sub Total"] + \
 
 # shorten column names
 movie_frame = movie_frame.rename(columns={'Orange Juice': 'OJ',
-                                          'Pita Chips': 'Chips'})
+                                          'Pita Chips': 'Chips',
+                                          'Surcharge_Multiplier': 'SM'})
 
 # Set up columns to be printed
 pandas.set_option('display.max_columns', None)
@@ -340,7 +341,21 @@ pandas.set_option('display.max_columns', None)
 # Display numbers to 2 dp
 pandas.set_option('precision', 2)
 
-print(movie_frame)
+# ask user if they want to see all columns
+print_all = input("Print all columns? (y) for yes ")
+
+# if yes print all columns
+if print_all == "y":
+    print()
+    print(movie_frame)
+
+# if no only print 'ticket', 'subtotal'
+# 'surcharge' and 'Total'
+else:
+    print()
+    print(movie_frame[['Ticket', 'Sub Total',
+                       'Surcharge', 'Total']])
+
 
 # Calculate ticket profit
 print()
