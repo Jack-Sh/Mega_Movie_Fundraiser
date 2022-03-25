@@ -121,9 +121,9 @@ def get_snack():
     # and possible abbreviations etc>
     valid_snacks = [
     ["popcorn", "p", "corn", "a"],
-    ["M&Ms", "m&m's", "mms", "m", "b"],
+    ["M&Ms", "m&m's", "mms", "mm", "m", "b"],
     ["pita chips", "chips", "pc", "pita", "c"],
-    ["water", "w", "d"],
+    ["water", "w", "h2o", "d"],
     ["orange juice", "oj", "orange", "juice", "e"]
     ]
 
@@ -131,7 +131,7 @@ def get_snack():
     snack_order = []
 
     desired_snack = ""
-    while desired_snack != "xxx":
+    while desired_snack != "xxx" or desired_snack != "n":
 
         snack_row = []
 
@@ -272,21 +272,8 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
     all_names.append(name)
     all_tickets.append(ticket_price)
 
-    # Loop to ask for snacks
-    check_snack = "Invalid choice"
-    while check_snack == "Invalid choice":
-
-        # asks user if they want snacks
-        want_snack = input("Do you want to order snacks? ").lower()
-
-        # checks whether answer is within the list
-        check_snack = string_check(want_snack, yes_no)
-
-    if check_snack == "Yes":
-        snack_order = get_snack()
-
-    else:
-        snack_order = []
+    # get snack order
+    snack_order = get_snack()
 
     # assume no snacks have been bought...
     for item in snack_lists:
@@ -374,32 +361,28 @@ summary_data.append(ticket_profit)
 total_profit = snack_profit + ticket_profit
 summary_data.append(total_profit)
 
+# Create summary frame
+summary_frame = pandas.DataFrame(summary_data_dict)
+summary_frame = summary_frame.set_index('Item')
+
 # Set up columns to be printed
 pandas.set_option('display.max_columns', None)
 
 # Display numbers to 2 dp
 pandas.set_option('precision', 2)
 
-# ask user if they want to see all columns
-print_all = input("Print all columns? (y) for yes ")
-
-# if yes print all columns
-if print_all == "y":
-    print()
-    print(movie_frame)
-
-# if no only print 'ticket', 'subtotal'
-# 'surcharge' and 'Total'
-else:
-    print()
-    print(movie_frame[['Ticket', 'Snacks',
-                       'Sub Total', 'Surcharge', 'Total']])
-
-
-# Calculate ticket profit
 print()
-ticket_profit = ticket_sales - (5 * ticket_count)
-print("Ticket profit: ${:.2f}".format(ticket_profit))
+print("*** Ticket / Snack Information ***")
+print("Note: for full details, please see the excel file called")
+print()
+print(movie_frame[['Ticket', 'Snacks',
+                  'Sub Total', 'Surcharge', 'Total']])
+
+print()
+
+print("*** Snack / Profit Summary ***")
+print()
+print(summary_frame)
 
 # If all tickets are sold print statement
 if ticket_count == MAX_TICKETS:
