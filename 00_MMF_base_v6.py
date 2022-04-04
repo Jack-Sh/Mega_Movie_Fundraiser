@@ -124,7 +124,7 @@ def get_snack():
     ["M&Ms", "m&m's", "mms", "mm", "m", "b"],
     ["pita chips", "chips", "pc", "pita", "c"],
     ["water", "w", "h2o", "d"],
-    ["orange juice", "oj", "orange", "juice", "e"]
+    ["orange juice", "oj", "o", "orange", "juice", "e"]
     ]
 
     # holds snack order for as single user
@@ -178,6 +178,30 @@ def currency(x):
     return "${:.2f}".format(x)
 
 
+# asks user if they need instructions
+def instructions(options):
+    show_help = "Invalid choice"
+    while show_help == "Invalid choice":
+        help = input("Would you like to read the instructions? ").lower()
+        show_help = string_check(help, options)
+
+    if show_help == "Yes":
+        print()
+        print("**** Mega Movie Fundraiser Instructions ****")
+        print()
+        print("- Firstly you will be asked to enter a name. \n"
+              "- Next you will be asked to enter the age of the person (this must be between 12 and 130). \n"
+              "- You can then enter the snacks that this person wants. Here is the list of available snacks: \n"
+              "- Popcorn, M&M's, Pita Chips, Water and Orange Juice (Note: You can enter the first letter of each snack) \n"
+              "- Once you have ordered your snacks type 'xxx' to continue \n"
+              "- You will then have to enter your payment method. The two options are cash or credit"
+              " (Note: There is a surcharge applied when using the credit method) \n"
+              "- Then the loop restarts at 'name'. Once you have entered everyone type 'xxx' to continue \n"
+              "- The program will then print a ticket, snack and profit summary.")
+
+    return ""
+
+
 # ----- Main Routine -----
 
 # Set up dictionaries / lists needed to hold data
@@ -195,7 +219,7 @@ yes_no = [
 ]
 
 # Initialise loop so it runs at least once
-MAX_TICKETS = 5
+MAX_TICKETS = 150
 
 name = ""
 ticket_count = 0
@@ -216,7 +240,7 @@ snack_lists = [popcorn, mms, pita_chips, water, orange_juice]
 
 # Lists to store summary data...
 summary_headings = ["Popcorn", "M&M's", "Pita Chips", "Water",
-                   "Orange Juice", "Snack Profit", "Ticket Price", "Total Profit"]
+                    "Orange Juice", "Snack Profit", "Ticket Price", "Total Profit"]
 
 summary_data = []
 
@@ -247,8 +271,9 @@ price_dict = {
     "Orange Juice": 3.25
 }
 
-# Ask user if they have used the program before
-# if no, show instructions
+# Ask user if they would like to see the instructions
+# if yes, print instructions
+instructions(yes_no)
 
 # Begin loop to get details
 while name != "xxx" and ticket_count < MAX_TICKETS:
@@ -317,7 +342,6 @@ movie_frame = pandas.DataFrame(movie_data_dict, columns=["Name",
                                                          "M&Ms",
                                                          "Orange Juice",
                                                          "Surcharge_Multiplier"])
-
 
 # create snacks column
 # fill it with price of snacks
@@ -389,7 +413,7 @@ summary_frame.to_csv("snack_summary.csv")
 
 print()
 print("*** Ticket / Snack Information ***")
-print("Note: for full details, please see the excel file called")
+print("Note: for full details, please see the excel file called ticket details")
 print()
 print(movie_frame[['Ticket', 'Snacks',
                   'Sub Total', 'Surcharge', 'Total']])
