@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="00_MMF_base_v6.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/00_MMF_base_v6.py">
+      <file leaf-file-name="00_MMF_base_v6_Complete.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/00_MMF_base_v6_Complete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
               <folding>
                 <element signature="e#136#470#0" expanded="false" />
                 <element signature="e#536#1100#0" expanded="false" />
@@ -98,6 +98,7 @@
         <option value="$PROJECT_DIR$/00_MMF_base_v5.py" />
         <option value="$PROJECT_DIR$/11_instructions.py" />
         <option value="$PROJECT_DIR$/00_MMF_base_v6.py" />
+        <option value="$PROJECT_DIR$/00_MMF_base_v6_Complete.py" />
       </list>
     </option>
   </component>
@@ -166,7 +167,7 @@
       <recent name="C:\Users\shannonj9063\OneDrive - Massey High School\2022_Schoolwork\COM201\MMF\Mega_Movie_Fundraiser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.11_instructions">
+  <component name="RunManager" selected="Python.00_MMF_base_v6_Complete">
     <configuration default="false" name="00_MMF_base_v4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,23 +181,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_MMF_base_v4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="10_surcharge" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Mega_Movie_Fundraiser" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10_surcharge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -230,7 +214,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_MMF_base_v6.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\shannonj9063\OneDrive - Massey High School\2022_Schoolwork\COM201\MMF\Mega_Movie_Fundraiser\00_MMF_base_v6_Complete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -248,6 +232,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Mega_Movie_Fundraiser" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_instructions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="00_MMF_base_v6_Complete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Mega_Movie_Fundraiser" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/00_MMF_base_v6_Complete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -388,18 +389,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.00_MMF_base_v4" />
-      <item index="1" class="java.lang.String" itemvalue="Python.10_surcharge" />
-      <item index="2" class="java.lang.String" itemvalue="Python.00_MMF_base_v5" />
-      <item index="3" class="java.lang.String" itemvalue="Python.00_MMF_base_v6" />
-      <item index="4" class="java.lang.String" itemvalue="Python.11_instructions" />
+      <item index="1" class="java.lang.String" itemvalue="Python.00_MMF_base_v5" />
+      <item index="2" class="java.lang.String" itemvalue="Python.00_MMF_base_v6" />
+      <item index="3" class="java.lang.String" itemvalue="Python.11_instructions" />
+      <item index="4" class="java.lang.String" itemvalue="Python.00_MMF_base_v6_Complete" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.11_instructions" />
-        <item index="1" class="java.lang.String" itemvalue="Python.00_MMF_base_v6" />
-        <item index="2" class="java.lang.String" itemvalue="Python.00_MMF_base_v5" />
-        <item index="3" class="java.lang.String" itemvalue="Python.00_MMF_base_v4" />
-        <item index="4" class="java.lang.String" itemvalue="Python.10_surcharge" />
+        <item index="0" class="java.lang.String" itemvalue="Python.00_MMF_base_v6_Complete" />
+        <item index="1" class="java.lang.String" itemvalue="Python.11_instructions" />
+        <item index="2" class="java.lang.String" itemvalue="Python.00_MMF_base_v6" />
+        <item index="3" class="java.lang.String" itemvalue="Python.00_MMF_base_v5" />
+        <item index="4" class="java.lang.String" itemvalue="Python.00_MMF_base_v4" />
       </list>
     </recent_temporary>
   </component>
@@ -825,10 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/00_MMF_base_v6.py">
+    <entry file="file://$PROJECT_DIR$/00_MMF_base_v6_Complete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="288" column="0" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
           <folding>
             <element signature="e#136#470#0" expanded="false" />
             <element signature="e#536#1100#0" expanded="false" />

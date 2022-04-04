@@ -279,6 +279,7 @@ instructions(yes_no)
 while name != "xxx" and ticket_count < MAX_TICKETS:
 
     # print number of tickets left
+    print()
     check_tickets(ticket_count, MAX_TICKETS)
 
     # Get name (can't be blank), if the name is not 'xxx' add one to the ticket_counter
